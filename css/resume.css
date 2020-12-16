@@ -190,3 +190,72 @@ a {
 a:hover, a:focus, a:active {
   color: #824027;
 }
+
+figure {
+  position: relative;
+  width: 30vw;
+  height: 40vh;
+  margin: 70px 0;
+  border: 0px;
+  text-align: center;
+}
+iframe {
+  position: absolute;
+  top: 0;
+  overflow: auto;
+  display: block;
+  height: 90%;
+  width: 100%;
+}
+figcaption {
+  position: absolute;
+  bottom: 0;
+  height: 10%;
+  width: 100%;
+  border: 0px;
+}
+
+#cont {
+    display: none;
+}
+#show:target #cont {
+    display: inline-block;
+}
+#show:target #show {
+    display: none;	
+}
+
+pre {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #f36d33;
+    color: #666;
+    page-break-inside: avoid;
+    font-family: monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+button8{
+display:inline-block;
+padding:0.2em 1.45em;
+margin:0.1em;
+border:0.15em solid #CCCCCC;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Segoe UI','Roboto',sans-serif;
+font-weight:400;
+color:#000000;
+background-color:#CCCCCC;
+text-align:center;
+position:relative;
+}
+button8:hover{
+border-color:#7a7a7a;
+}

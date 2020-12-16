@@ -58,14 +58,34 @@
  -->
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h2 class="mb-0">Task Oriented Hand Motion Retargeting for Dexterous Manipulation Imitation</h2>
-              <div class="subheading mb-3">ECCV HANDS Workshop</div>
+              <h2 class="mb-0">Task Oriented Hand Motion Retargeting for Dexterous Manipulation Imitation <a href="https://arxiv.org/abs/1810.01845"> <img src="img/adobe-pdf-icon.svg" alt="pdf link" style="width:42px;height:42px;">
+            </a></h2>
+              <div class="subheading mb-3">ECCV HANDS Workshop 2018</div>
               <p><i><b>Abstract</b></i>: Human hand actions are quite complex, especially when they involve object manipulation, mainly due to the high dimensionality of the hand and the vast action space that entails.
 Imitating those actions with dexterous hand models involves different important and challenging steps: acquiring human hand information, retargeting it to a hand model, and learning a policy from acquired data.
 In this work, we capture the hand information by using a state-of-the-art hand pose estimator. We tackle the retargeting problem from the hand pose to a 29 DoF hand model by combining inverse kinematics and PSO with a task objective optimisation. This objective encourages the virtual hand to accomplish the manipulation task, relieving the effect of the estimator's noise and the domain gap. Our approach leads to a better success rate in the grasping task compared to our inverse kinematics baseline, allowing us to record successful human demonstrations. 
 Furthermore, we used these demonstrations to learn a policy network using generative adversarial imitation learning (GAIL) that is able to autonomously grasp an object in the virtual space.</p>
-			<h3> Videos coming soon!</h3>
+			<div id="show">
+				<a href="#show" id="show"><button type="button" class="btn btn-secondary" style="margin-bottom:30px;">Show BibTex</button> </a>
+				<div id="cont">
+					<a href="#hide" id="hide"> <button type="button" class="btn btn-secondary">Hide BibTex</button> </a>
+		<pre><code>@inproceedings{antotsiou2018task,
+	    title={\href{https://arxiv.org/abs/1810.01845}{Task-oriented hand motion retargeting for dexterous manipulation imitation}},
+	    author={Antotsiou, Dafni and Garcia-Hernando, Guillermo and Kim, Tae-Kyun},
+	    booktitle={ECCV},
+	    year={2018}
+	    }</pre></code>	
+				</div>
 			</div>
+			<h3>Demo Videos</h3>
+				<figure>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/As3JWf9kE1I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="video"></iframe>
+					<figcaption>Offline demo of applying Task Oriented Retargeting. The original trajectories using a traditional retargeting failed. We then applied Task Oriented Retargeting to the HPE data to correct them.</figcaption>
+				</figure>
+				<figure>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/l5_gIMVQkXk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<figcaption>Real-time demo of using HPE and Task Oriented Retargeting. Notice how the fingers do not go haywire but stay on the ball when the hand turns away from the camera.</figcaption>
+				</figure>
           </div>
         </div>
       </section>
