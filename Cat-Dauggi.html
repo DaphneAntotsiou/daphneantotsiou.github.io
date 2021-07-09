@@ -74,7 +74,7 @@
 					<a href="#show" id="show" class="nounderline"><button type="button" class="btn btn-secondary" style="margin-bottom:30px;">Show BibTex</button> </a>
 					<div id="cont">
 						<a href="#hide" id="hide" class="nounderline"> <button type="button" class="btn btn-secondary">Hide BibTex</button></a>
-						<a href="javascript:CopyToClipboard('bibtex');return false;"> <img_btn> <img src="img/copy_icon.svg" alt="copy bibtex" style="width:32px;height:32px;padding:3px;"> </img_btn></a>
+						<img_btn><img src="img/copy_icon.svg" alt="copy bibtex" style="width:32px;height:32px;padding:3px;" onclick="CopyToClipboard('bibtex')"></img_btn></a>
 					<pre><code id="bibtex">@inproceedings{antotsiou2021cat,
 	title={\href{https://arxiv.org/abs/2103.13887}{Adversarial Imitation Learning with Trajectorial Augmentation and Correction}},
 	author={Antotsiou, Dafni and Ciliberto, Carlo and Kim, Tae-Kyun},

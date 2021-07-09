@@ -70,7 +70,7 @@ Furthermore, we used these demonstrations to learn a policy network using genera
 					<a href="#show" id="show" class="nounderline"><button type="button" class="btn btn-secondary" style="margin-bottom:30px;">Show BibTex</button> </a>
 					<div id="cont">
 						<a href="#hide" id="hide" class="nounderline"> <button type="button" class="btn btn-secondary">Hide BibTex</button></a>
-						<a href="javascript:CopyToClipboard('bibtex');return false;"><img_btn><img src="img/copy_icon.svg" alt="copy bibtex" style="width:32px;height:32px;padding:3px;"></img_btn></a>
+						<img_btn><img src="img/copy_icon.svg" alt="copy bibtex" style="width:32px;height:32px;padding:3px;" onclick="CopyToClipboard('bibtex')"></img_btn>
 					<pre><code id="bibtex">@inproceedings{antotsiou2018task,
 	title={\href{https://arxiv.org/abs/1810.01845}{Task-oriented hand motion retargeting for dexterous manipulation imitation}},
 	author={Antotsiou, Dafni and Garcia-Hernando, Guillermo and Kim, Tae-Kyun},
@@ -102,9 +102,7 @@ Furthermore, we used these demonstrations to learn a policy network using genera
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
-	
     <script src="js/functions.js"></script>
-
 
   </body>
 
